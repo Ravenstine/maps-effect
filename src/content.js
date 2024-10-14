@@ -9,6 +9,10 @@ function onInteract () {
     });
 }
 
-window.addEventListener("click", onInteract, true);
+window.addEventListener("click", onInteract, {
+  capture: true,
+  once: true,
+  passive: true,
+});
 
 onInteract();
