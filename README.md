@@ -1,7 +1,7 @@
 Maps Effect
 ===========
 
-This is a simple Manifest v3 extension that plays the galaxy map audio from *Mass Effect* when interacting with Google Maps.
+This is a simple Manifest v3 extension that plays the galaxy map audio from *Mass Effect* when interacting with Google Maps.  It's just a little experiment that is not to be taken seriously.
 
 Sound only can be played once the user clicks somewhere on the page because modern browsers require initial interaction in order for audio to begin playing automatically.
 
