@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+PROJECT_DIR=$(cd -- "$(dirname -- "$0")" && cd .. && pwd)
+DIST_DIR="$PROJECT_DIR/dist"
+
+mkdir -p "$DIST_DIR"
+mkdir -p "$DIST_DIR/assets"
+
+cp -r "$PROJECT_DIR/src/"* "$DIST_DIR"
+
+yt-dlp -x --audio-format mp3 -o "$DIST_DIR/assets/audio.mp3" "https://www.youtube.com/watch?v=6RO7K4W-c9g"
